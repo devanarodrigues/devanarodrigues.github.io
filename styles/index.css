@@ -148,20 +148,123 @@ h1 {
     font-size: 2em;
 }
 
-.projeto {
-    background-color: blue;
-    width: 500px;
-    height: 200px;
-    margin: 20px;
-}
+/*--- PROJETOS --*/
 
-.projeto p {
-    text-align: center;
-    margin-top: 170px;
+.projeto1 {
+    background-image: url(/images/print-dc.png);
+    background-color: antiquewhite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 253px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.projeto1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
     width: 100%;
+    height: 50px;
     background-color: azure;
     color: #000;
+    transition: 0.25s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 1.25em;
+    font-weight: bolder;
 }
+.projeto1 p:hover{
+    background-color: black;
+    color: white;
+}
+.projeto1 a{
+    text-decoration: none;
+}
+.projeto1 a:hover{
+    background-color: black;
+    color: white;
+}
+/*----*/
+.projeto2 {
+    background-image: url();
+    background-color: antiquewhite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 253px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.projeto2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    color: #000;
+    transition: 0.25s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+.projeto2 p:hover{
+    background-color: black;
+    color: white;
+}
+.projeto2 a{
+    text-decoration: none;
+}
+.projeto2 a:hover{
+    background-color: black;
+    color: white;
+}
+/*----*/
+.projeto3 {
+    background-image: url();
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 253px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.projeto3 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    color: #000;
+    transition: 0.25s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+.projeto3 p:hover{
+    background-color: black;
+    color: white;
+}
+.projeto3 a{
+    text-decoration: none;
+}
+.projeto3 a:hover{
+    background-color: black;
+    color: white;
+}
+/*----*/
+
+
 
 /*--- SEÇÃO 2 --*/
 
@@ -186,7 +289,10 @@ h1 {
     text-align: center;
     background-color: burlywood;
     margin-top: 0;
+}
 
+.projeto a{
+    text-decoration: none;
 }
 
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
@@ -271,12 +377,6 @@ h1 {
     justify-content: center;
 }
 
-.rodape ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .teste2{
     height: 32px;
     width: 32px;
@@ -284,9 +384,15 @@ h1 {
 
 .rodape a{
     margin-left: 10px;
+    width: 32px;
+    height: 32px;
 }
 
 .rodape p{
     position: absolute;
-    bottom: -203%;
+    bottom: -202%;
+}
+
+.rodape a:hover{
+    filter: contrast(2);
 }
