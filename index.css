@@ -57,7 +57,6 @@ nav {
     width: 300px;
     height: 100%;
     border-bottom-left-radius: 10px;
-
 }
 #logo p{
     font-size: 22px;
@@ -107,6 +106,7 @@ header>h2 {
 }
 
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
+
 .secao-principal{
     min-height: 680px;
     max-height: 1440px;
@@ -116,7 +116,8 @@ header>h2 {
     width: 350px;
     height: 350px;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 165px;
+    padding: 0;
 }
 #container a{
     margin: auto;
@@ -194,14 +195,15 @@ h1 {
     font-weight: bolder;
 }
 .projeto1 p:hover{
-    background-color: black;
+    background-color: #1C1C1C;
     color: white;
 }
 .projeto1 a{
     text-decoration: none;
 }
 .projeto1 a:hover{
-    background-color: black;
+    background-color: #1C1C1C;
+    box-shadow: 0 0 0 10px #000;
     color: white;
 }
 /*----*/
