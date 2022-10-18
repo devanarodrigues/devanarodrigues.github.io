@@ -1,0 +1,424 @@
+/*--======================= FORMATAÇÕES GERAIS =======================--*/
+
+* {
+    margin: 0;
+    font-family: 'Changa', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: rgb(212, 212, 212);
+}
+
+#container {
+    display: flex;
+    background-color: #1C1C1C;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 2px solid rgb(209, 209, 209);
+    animation: troca-cor-container 3s infinite ease-in-out;
+}
+
+/*--================= FORMATAÇÕES BARRA DE NAVEGAÇÃO  =======================--*/
+
+nav {
+    background-color: #1C1C1C;
+    width: 100%;
+    height: 100px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    animation: troca-cor-nav 3s infinite ease-in-out;
+}
+
+#logo {
+    background-color: pink;
+    width: 300px;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+
+}
+
+#menu {
+    float: right;
+}
+
+#menu ul {
+    margin: 25px;
+    margin-right: 40px;
+}
+
+#menu li {
+    list-style: none;
+    display: inline;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+    padding: 5px 15px;
+}
+
+#menu a:hover {
+    background-color: #1C1C1C;
+    border-radius: 3px;
+}
+
+/*--======================= FORMATAÇÕES TOPO =======================--*/
+header {
+    background-color: blue;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    border-top-left-radius: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+header>h2 {
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 2.5em;
+}
+
+/*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
+
+.teste {
+    width: 512px;
+    height: 512px;
+    margin: 20px auto;
+}
+#container a{
+    margin: auto;
+}
+
+/*--- MAIN --*/
+main {
+    background-color: rgb(0, 148, 99);
+    width: 900px;
+    height: 700px;
+    margin: auto 20px auto auto;
+}
+
+main p {
+    margin: auto 10px;
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid red;
+}
+
+/*--- SEÇÃO 1 --*/
+
+.content {
+    display: block;
+}
+
+.secao1 {
+    width: 100%;
+    height: 780px;
+    background-color: blueviolet;
+    margin: auto 20px;
+    padding-top: 0;
+    padding-bottom: 90px;
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secao1>h3 {
+    width: 100%;
+    text-align: center;
+    background-color: burlywood;
+    margin-top: 0;
+    height: 70px;
+    font-size: 2em;
+}
+
+/*--- PROJETOS --*/
+
+.projeto1 {
+    background-image: url(images/print-dc.png);
+    background-color: antiquewhite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 253px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.projeto1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    color: #000;
+    transition: 0.25s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+.projeto1 p:hover{
+    background-color: black;
+    color: white;
+}
+.projeto1 a{
+    text-decoration: none;
+}
+.projeto1 a:hover{
+    background-color: black;
+    color: white;
+}
+/*----*/
+.projeto2 {
+    background-image: url();
+    background-color: antiquewhite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 253px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.projeto2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    color: #000;
+    transition: 0.25s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+.projeto2 p:hover{
+    background-color: black;
+    color: white;
+}
+.projeto2 a{
+    text-decoration: none;
+}
+.projeto2 a:hover{
+    background-color: black;
+    color: white;
+}
+/*----*/
+.projeto3 {
+    background-image: url();
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 253px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.projeto3 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    color: #000;
+    transition: 0.25s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+.projeto3 p:hover{
+    background-color: black;
+    color: white;
+}
+.projeto3 a{
+    text-decoration: none;
+}
+.projeto3 a:hover{
+    background-color: black;
+    color: white;
+}
+/*----*/
+
+
+
+/*--- SEÇÃO 2 --*/
+
+.secao2 {
+    width: 100%;
+    height: 780px;
+    background-color: blueviolet;
+    margin: auto 20px;
+    padding-top: 0;
+    padding-bottom: 90px;
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secao2>h3 {
+    width: 100%;
+    height: 70px;
+    font-size: 2em;
+    text-align: center;
+    background-color: burlywood;
+    margin-top: 0;
+}
+
+.projeto a{
+    text-decoration: none;
+}
+
+/*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
+
+.rodape {
+    height: 100px;
+    background-color: #1C1C1C;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*--========================== IMAGENS =========================--*/
+.woman-rosa-512 {
+    background-image: url(images/001-mulher-rosa-512.png);
+    background-repeat: no-repeat;
+    transition: 1s;
+
+}
+
+.woman-azul-512 {
+    background-image: url(images/002-mulher-azul-512.png);
+    background-repeat: no-repeat;
+
+    transition: 1s;
+}
+
+.woman-azul-512:hover {
+    background-image: url(images/001-mulher-rosa-512.png);
+    transition: 1s;
+    transform: rotateX(-20deg)
+}
+
+/*--========================== KEYFRAMES =========================--*/
+
+
+@keyframes troca-imagem {
+    0% {
+        background-image: url(images/001-mulher-rosa-512.png);
+        transform: translateY(10px);
+    }
+    
+    50% {
+        background-image: url(images/002-mulher-azul-512.png);
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        background-image: url(images/001-mulher-rosa-512.png);
+        transform: translateY(10px);
+    }    
+}
+
+@keyframes troca-imagem-rodape {
+    0% {
+        background-image: url(images/icons/001-mulher-rosa-icon-32.png);
+    }
+    
+    50% {
+        background-image: url(images/icons/002-mulher-azul-icon-32.png);
+    }
+    
+    100% {
+        background-image: url(images/icons/001-mulher-rosa-icon-32.png);
+    }    
+}
+@keyframes troca-cor-container {
+    0% {
+        box-shadow: 0 0 25px rgba(255, 0, 140, 0.9);
+    }
+    
+    50% {
+        box-shadow: 0 0 25px rgba(0, 17, 255, 0.9);
+    }
+    
+    100% {
+        box-shadow: 0 0 25px rgba(255, 0, 140, 0.9);
+    }    
+}
+@keyframes troca-cor-nav {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 0, 140, 0.9);
+    }
+    
+    50% {
+        box-shadow: 0 0 20px rgba(0, 17, 255, 0.9);
+    }
+    
+    100% {
+        box-shadow: 0 0 20px rgba(255, 0, 140, 0.9);
+    }    
+}
+
+/*--========================== ANIMAÇÕES =========================--*/
+
+.animacao {
+    background-image: url(images/002-mulher-azul-512.png);
+    animation: troca-imagem 3s infinite ease-in-out;
+}
+.animacao-rodape {
+    background-image: url(images/icons/002-mulher-azul-icon-32.png);
+    animation: troca-imagem-rodape 3s infinite ease-in-out;
+}    
+
+/*--========================== RODAPE ==========================--*/
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.teste2{
+    height: 32px;
+    width: 32px;
+}
+
+.rodape a{
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.rodape p{
+    position: absolute;
+    bottom: 1px;
+}
+
+.rodape a:hover{
+    filter: contrast(2);
+}
