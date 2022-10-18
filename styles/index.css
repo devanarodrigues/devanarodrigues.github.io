@@ -150,7 +150,7 @@ h1 {
 /*--- PROJETOS --*/
 
 .projeto1 {
-    background-image: url(/images/print-dc.png);
+    background-image: url(./images/print-dc.png);
     background-color: antiquewhite;
     background-size: contain;
     background-repeat: no-repeat;
@@ -305,21 +305,21 @@ h1 {
 
 /*--========================== IMAGENS =========================--*/
 .woman-rosa-512 {
-    background-image: url(anarodrigues/images/001-mulher-rosa-512.png);
+    background-image: url(./images/001-mulher-rosa-512.png);
     background-repeat: no-repeat;
     transition: 1s;
 
 }
 
 .woman-azul-512 {
-    background-image: url(anarodrigues/images/002-mulher-azul-512.png);
+    background-image: url(./images/002-mulher-azul-512.png);
     background-repeat: no-repeat;
 
     transition: 1s;
 }
 
 .woman-azul-512:hover {
-    background-image: url(anarodrigues/images/001-mulher-rosa-512.png);
+    background-image: url(./images/001-mulher-rosa-512.png);
     transition: 1s;
     transform: rotateX(-20deg)
 }
@@ -329,32 +329,32 @@ h1 {
 
 @keyframes troca-imagem {
     0% {
-        background-image: url(anarodrigues/images/001-mulher-rosa-512.png);
+        background-image: url(./images/001-mulher-rosa-512.png);
         transform: translateY(10px);
     }
     
     50% {
-        background-image: url(anarodrigues/images/002-mulher-azul-512.png);
+        background-image: url(./images/002-mulher-azul-512.png);
         transform: translateY(-10px);
     }
     
     100% {
-        background-image: url(anarodrigues/images/001-mulher-rosa-512.png);
+        background-image: url(./images/001-mulher-rosa-512.png);
         transform: translateY(10px);
     }    
 }
 
 @keyframes troca-imagem-rodape {
     0% {
-        background-image: url(anarodrigues/images/icons/001-mulher-rosa-icon-32.png);
+        background-image: url(./icons/001-mulher-rosa-icon-32.png);
     }
     
     50% {
-        background-image: url(anarodrigues/images/icons/002-mulher-azul-icon-32.png);
+        background-image: url(./icons/002-mulher-azul-icon-32.png);
     }
     
     100% {
-        background-image: url(anarodrigues/images/icons/001-mulher-rosa-icon-32.png);
+        background-image: url(./icons/001-mulher-rosa-icon-32.png);
     }    
 }
 @keyframes troca-cor-container {
@@ -387,11 +387,11 @@ h1 {
 /*--========================== ANIMAÇÕES =========================--*/
 
 .animacao {
-    background-image: url(anarodrigues/images/002-mulher-azul-512.png);
+    background-image: url(./images/002-mulher-azul-512.png);
     animation: troca-imagem 3s infinite ease-in-out;
 }
 .animacao-rodape {
-    background-image: url(anarodrigues/images/icons/002-mulher-azul-icon-32.png);
+    background-image: url(./icons/002-mulher-azul-icon-32.png);
     animation: troca-imagem-rodape 3s infinite ease-in-out;
 }    
 
