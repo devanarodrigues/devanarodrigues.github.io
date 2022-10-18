@@ -1,2 +1,8 @@
 SITE CORES
 https://celke.com.br/artigo/tabela-de-cores-html-nome-hexadecimal-rgb
+
+IDEIA
+logo:
+ #ana{
+    developer: front-end;
+}
