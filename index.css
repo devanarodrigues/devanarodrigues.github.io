@@ -24,7 +24,7 @@ body::-webkit-scrollbar-thumb {
 
 #container {
     display: flex;
-    background-color: #1C1C1C;
+    background-color: #222222;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
@@ -42,6 +42,7 @@ body::-webkit-scrollbar-thumb {
 
 nav {
     background-color: #1C1C1C;
+    top: 0;
     width: 100%;
     height: 80px;
     border-bottom-left-radius: 10px;
@@ -141,13 +142,51 @@ h1 {
     text-align: center;
 }
 
+
 /*--- SEÇÃO 1 --*/
 
+.secao1 {
+    width: 1200px;
+    min-height: 680px;
+    /*background-color: #1C1C1C;*/
+    background-color: blue;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secao1>h3 {
+    width: 100%;
+    height: 70px;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+}
+
+.projeto a{
+    text-decoration: none;
+}
+/*--- CARDS --*/
+.card-exp{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+}
+.card-hab{
+    width: 400px;
+    height: 400px;
+    background-color: purple;
+}
+
+
+/*--- SEÇÃO 2 --*/
 .content {
     display: block;
 }
 
-.secao1 {
+.secao2 {
     width: 100%;
     min-height: 680px;
     background-color: #222222;
@@ -158,7 +197,7 @@ h1 {
     justify-content: space-between;
 }
 
-.secao1>h3 {
+.secao2>h3 {
     width: 100%;
     text-align: center;
     margin-top: 0;
@@ -178,7 +217,8 @@ h1 {
     margin: 20px;
     border-radius: 15px;
 }
-.projeto1 p{
+
+.projeto1 p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,18 +234,21 @@ h1 {
     font-size: 1.25em;
     font-weight: bolder;
 }
-.projeto1 p:hover{
-    background-color: #1C1C1C;
+
+.projeto1 p:hover {
+    background-color: #222222;
     color: white;
 }
-.projeto1 a{
+
+.projeto1 a {
     text-decoration: none;
 }
-.projeto1 a:hover{
+
+.projeto1 a:hover {
     background-color: #1C1C1C;
-    box-shadow: 0 0 0 10px #000;
     color: white;
 }
+
 /*----*/
 .projeto2 {
     background-image: url();
@@ -217,7 +260,8 @@ h1 {
     margin: 20px;
     border-radius: 15px;
 }
-.projeto2 p{
+
+.projeto2 p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,84 +277,19 @@ h1 {
     font-size: 1.25em;
     font-weight: bolder;
 }
-.projeto2 p:hover{
-    background-color: black;
+
+.projeto2 p:hover {
+    background-color: #222222;
     color: white;
 }
-.projeto2 a{
+
+.projeto2 a {
     text-decoration: none;
 }
-.projeto2 a:hover{
+
+.projeto2 a:hover {
     background-color: black;
     color: white;
-}
-/*---
-.projeto3 {
-    background-image: url();
-    background-color: antiquewhite;
-    background-repeat: no-repeat;
-    width: 500px;
-    height: 253px;
-    margin: 20px;
-    border-radius: 15px;
-}
-.projeto3 p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 240px;
-    width: 100%;
-    height: 50px;
-    background-color: azure;
-    color: #000;
-    transition: 0.25s;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
-    font-size: 1.25em;
-    font-weight: bolder;
-}
-.projeto3 p:hover{
-    background-color: black;
-    color: white;
-}
-.projeto3 a{
-    text-decoration: none;
-}
-.projeto3 a:hover{
-    background-color: black;
-    color: white;
-}
--*/
-/*----*/
-
-
-
-/*--- SEÇÃO 2 --*/
-
-.secao2 {
-    min-height: 680px;
-    background-color: #1C1C1C;
-    padding-top: 0;
-    padding-bottom: 90px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.secao2>h3 {
-    width: 100%;
-    height: 70px;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 0;
-}
-
-.projeto a{
-    text-decoration: none;
 }
 
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
