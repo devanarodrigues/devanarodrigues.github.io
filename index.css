@@ -148,8 +148,7 @@ h1 {
 .secao1 {
     width: 1200px;
     min-height: 680px;
-    /*background-color: #1C1C1C;*/
-    background-color: blue;
+    background-color: #1C1C1C;
     padding-bottom: 90px;
     display: flex;
     flex-direction: row;
@@ -162,7 +161,7 @@ h1 {
     height: 70px;
     font-size: 2em;
     text-align: center;
-    margin-top: 0;
+    margin: 40px 0;
 }
 
 .projeto a{
@@ -172,12 +171,27 @@ h1 {
 .card-exp{
     width: 400px;
     height: 400px;
-    background-color: blueviolet;
+    margin: -20px 100px;
+    padding: 20px;
+    border-radius: 15px;
+    animation:  troca-cor-card 5s infinite ease-in-out;
 }
 .card-hab{
     width: 400px;
     height: 400px;
     background-color: purple;
+    margin: -20px 100px;
+    padding: 20px;
+    border-radius: 15px;
+    float: right;
+    clear: right;
+}
+
+.card-hab  h4{
+    text-align: center;
+}
+.card-exp h4{
+    text-align: center;
 }
 
 
@@ -200,7 +214,7 @@ h1 {
 .secao2>h3 {
     width: 100%;
     text-align: center;
-    margin-top: 0;
+    margin: 40px 0;
     height: 70px;
     font-size: 2em;
 }
@@ -380,6 +394,21 @@ h1 {
     100% {
         box-shadow: 0 0 20px rgba(255, 0, 140, 0.9);
     }    
+}
+
+@keyframes troca-cor-card{
+        0% {
+            background-color:  rgba(255, 0, 140, 0.363);
+        }
+        
+        50% {
+            background-color:  rgba(0, 17, 255, 0.363);
+        }
+        
+        100% {
+            background-color:  rgba(255, 0, 140, 0.363);
+        }  
+    
 }
 
 /*--========================== ANIMAÇÕES =========================--*/
