@@ -201,6 +201,7 @@ h1 {
     margin: -20px 100px;
     padding: 20px;
     border-radius: 15px;
+    background-color: rgba(0, 17, 255, 0.24);
     /*animation:  troca-cor-card1 10s infinite ease-in-out;*/
     
 }
@@ -212,8 +213,8 @@ h1 {
     border-radius: 15px;
     float: right;
     clear: right;
-    animation:  troca-cor-card2 10s infinite ease-in-out;
-    position: relative;
+    background-color:  rgba(255, 0, 140, 0.24);
+ /*   animation:  troca-cor-card2 10s infinite ease-in-out;*/
 }
 
 .card-hab  h4{
