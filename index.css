@@ -144,6 +144,33 @@ h1 {
 
 
 /*--- SEÇÃO 1 --*/
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 240px;
+}
+.icon1{
+    width: 64px;
+    height: 64px;
+    background-image: url(/images/icons/html-5.png);
+    animation: icon1 3s infinite ease;
+    
+}
+.icon2{
+    width: 64px;
+    height: 64px;
+    background-image: url(/images/icons/css-3.png);
+    animation: icon2 3s infinite ease;
+}
+.icon3{
+    width: 64px;
+    height: 64px;
+    background-image: url(/images/icons/js.png);
+    animation: icon3 3s infinite ease;
+}
 
 .secao1 {
     width: 1200px;
@@ -174,17 +201,19 @@ h1 {
     margin: -20px 100px;
     padding: 20px;
     border-radius: 15px;
-    animation:  troca-cor-card 5s infinite ease-in-out;
+    /*animation:  troca-cor-card1 10s infinite ease-in-out;*/
+    
 }
 .card-hab{
     width: 400px;
     height: 400px;
-    background-color: purple;
     margin: -20px 100px;
     padding: 20px;
     border-radius: 15px;
     float: right;
     clear: right;
+    animation:  troca-cor-card2 10s infinite ease-in-out;
+    position: relative;
 }
 
 .card-hab  h4{
@@ -223,12 +252,12 @@ h1 {
 
 .projeto1 {
     background-image: url(images/print-dc.png);
-    background-color: antiquewhite;
+    background-color: #1C1C1C;
     background-size: contain;
     background-repeat: no-repeat;
     width: 500px;
     height: 253px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 15px;
 }
 
@@ -265,13 +294,15 @@ h1 {
 
 /*----*/
 .projeto2 {
-    background-image: url();
-    background-color: antiquewhite;
+    background-image: url(/images/loading.gif);
+    background-size: contain;
+    background-color: #1C1C1C;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 500px;
+    min-width: 250px;
+    max-width: 500px;
     height: 253px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 15px;
 }
 
@@ -396,19 +427,71 @@ h1 {
     }    
 }
 
-@keyframes troca-cor-card{
+@keyframes troca-cor-card1{
         0% {
-            background-color:  rgba(255, 0, 140, 0.363);
+            background-color:  rgba(255, 0, 140, 0.24);
         }
         
         50% {
-            background-color:  rgba(0, 17, 255, 0.363);
+            background-color:  rgba(0, 17, 255, 0.24);
         }
         
         100% {
-            background-color:  rgba(255, 0, 140, 0.363);
+            background-color:  rgba(255, 0, 140, 0.24);
         }  
     
+}
+@keyframes troca-cor-card2{
+        0% {
+            background-color:  rgba(0, 17, 255, 0.24);
+        }
+        
+        50% {
+            background-color:  rgba(255, 0, 140, 0.24);
+        }
+        
+        100% {
+            background-color:  rgba(0, 17, 255, 0.24);
+        }  
+}
+@keyframes icon2{
+    0% {
+        transform: translateY(-10px);
+    }
+    
+    50% {
+        transform: translateY(10px);
+    }
+    
+    100% {
+        transform: translateY(-10px);
+    }   
+}
+@keyframes icon1{
+    0% {
+        transform: translateY(10px);
+    }
+    
+    50% {
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }   
+}
+@keyframes icon3{
+    0% {
+        transform: translateY(10px);
+    }
+    
+    50% {
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }   
 }
 
 /*--========================== ANIMAÇÕES =========================--*/
