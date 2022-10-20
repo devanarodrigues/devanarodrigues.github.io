@@ -59,7 +59,8 @@ nav {
     height: 100%;
     border-bottom-left-radius: 10px;
 }
-#logo p{
+
+#logo p {
     font-size: 22px;
 }
 
@@ -98,17 +99,27 @@ header {
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
 }
 
+
 header>h2 {
-    margin-left: 20px;
-    margin-top: 40px;
-    font-size: 2.5em;
+    margin-top: 20px;
+    font-size: 3em;
+}
+header h1{
+    font-weight: 200;
+}
+
+header h1,
+h2 {
+    margin: auto;
+    animation: header 3s infinite ease-in-out;
 }
 
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
 
-#main{
+#main {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -118,34 +129,41 @@ header>h2 {
     background-color: #222222;
     min-height: 100vh;
 }
-main:last-child{
+
+main:last-child {
     margin-bottom: 40px;
 }
-#apresentacao{
+
+#apresentacao {
     width: 900px;
     height: 400px;
     background-color: #6d1919;
     margin: 20px auto;
     border-radius: 10px;
 }
-#apresentacao h1{
+
+#apresentacao h1 {
     text-align: center;
 }
-#apresentacao p{
+
+#apresentacao p {
     margin: 20px 40px;
 }
 
-.secao-principal{
-    max-height: 1440px;
+.secao-principal {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .teste {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     margin: 50px auto;
     padding: 0;
 }
-#container a{
+
+#container a {
     margin: auto;
 }
 
@@ -163,7 +181,7 @@ main p {
 }
 
 main h1 {
-    background-color: rgb(80, 34, 59);
+    /*background-color: rgb(80, 34, 59);*/
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -171,7 +189,7 @@ main h1 {
 
 
 /*--- SEÇÃO 1 --*/
-.icons{
+.icons {
     display: flex;
     justify-content: space-evenly;
     align-content: space-between;
@@ -179,20 +197,23 @@ main h1 {
     flex-wrap: wrap;
     margin-top: 240px;
 }
-.icon1{
+
+.icon1 {
     width: 64px;
     height: 64px;
     background-image: url(/images/icons/html-5.png);
     animation: icon1 3s infinite ease;
-    
+
 }
-.icon2{
+
+.icon2 {
     width: 64px;
     height: 64px;
     background-image: url(/images/icons/css-3.png);
     animation: icon2 3s infinite ease;
 }
-.icon3{
+
+.icon3 {
     width: 64px;
     height: 64px;
     background-image: url(/images/icons/js.png);
@@ -218,11 +239,12 @@ main h1 {
     margin: 40px 0;
 }
 
-.projeto a{
+.projeto a {
     text-decoration: none;
 }
+
 /*--- CARDS --*/
-.card-exp{
+.card-exp {
     width: 400px;
     height: 400px;
     margin: -20px 100px;
@@ -230,9 +252,10 @@ main h1 {
     border-radius: 15px;
     background-color: rgba(0, 17, 255, 0.24);
     /*animation:  troca-cor-card1 10s infinite ease-in-out;*/
-    
+
 }
-.card-hab{
+
+.card-hab {
     width: 400px;
     height: 400px;
     margin: -20px 100px;
@@ -240,14 +263,15 @@ main h1 {
     border-radius: 15px;
     float: right;
     clear: right;
-    background-color:  rgba(255, 0, 140, 0.24);
- /*   animation:  troca-cor-card2 10s infinite ease-in-out;*/
+    background-color: rgba(255, 0, 140, 0.24);
+    /*   animation:  troca-cor-card2 10s infinite ease-in-out;*/
 }
 
-.card-hab  h4{
+.card-hab h4 {
     text-align: center;
 }
-.card-exp h4{
+
+.card-exp h4 {
     text-align: center;
 }
 
@@ -403,165 +427,180 @@ main h1 {
         background-image: url(images/001-mulher-rosa-512.png);
         transform: translateY(10px);
     }
-    
+
     50% {
         background-image: url(images/002-mulher-azul-512.png);
         transform: translateY(-10px);
     }
-    
+
     100% {
         background-image: url(images/001-mulher-rosa-512.png);
         transform: translateY(10px);
-    }    
+    }
 }
 
 @keyframes troca-imagem-rodape {
     0% {
         background-image: url(images/icons/001-mulher-rosa-icon-32.png);
     }
-    
+
     50% {
         background-image: url(images/icons/002-mulher-azul-icon-32.png);
     }
-    
+
     100% {
         background-image: url(images/icons/001-mulher-rosa-icon-32.png);
-    }    
+    }
 }
+
 @keyframes troca-cor-container {
     0% {
         box-shadow: 0 0 25px rgba(255, 0, 140, 0.9);
     }
-    
+
     50% {
         box-shadow: 0 0 25px rgba(0, 17, 255, 0.9);
     }
-    
+
     100% {
         box-shadow: 0 0 25px rgba(255, 0, 140, 0.9);
-    }    
+    }
 }
+
 @keyframes troca-cor-nav {
     0% {
         box-shadow: 0 0 20px rgba(255, 0, 140, 0.9);
     }
-    
+
     50% {
         box-shadow: 0 0 20px rgba(0, 17, 255, 0.9);
     }
-    
+
     100% {
         box-shadow: 0 0 20px rgba(255, 0, 140, 0.9);
-    }    
+    }
 }
 
-@keyframes troca-cor-card1{
-        0% {
-            background-color:  rgba(255, 0, 140, 0.24);
-        }
-        
-        50% {
-            background-color:  rgba(0, 17, 255, 0.24);
-        }
-        
-        100% {
-            background-color:  rgba(255, 0, 140, 0.24);
-        }  
-    
+@keyframes troca-cor-card1 {
+    0% {
+        background-color: rgba(255, 0, 140, 0.24);
+    }
+
+    50% {
+        background-color: rgba(0, 17, 255, 0.24);
+    }
+
+    100% {
+        background-color: rgba(255, 0, 140, 0.24);
+    }
+
 }
-@keyframes troca-cor-card2{
-        0% {
-            background-color:  rgba(0, 17, 255, 0.24);
-        }
-        
-        50% {
-            background-color:  rgba(255, 0, 140, 0.24);
-        }
-        
-        100% {
-            background-color:  rgba(0, 17, 255, 0.24);
-        }  
+
+@keyframes troca-cor-card2 {
+    0% {
+        background-color: rgba(0, 17, 255, 0.24);
+    }
+
+    50% {
+        background-color: rgba(255, 0, 140, 0.24);
+    }
+
+    100% {
+        background-color: rgba(0, 17, 255, 0.24);
+    }
 }
-@keyframes icon2{
+
+@keyframes icon2 {
     0% {
         transform: translateY(-10px);
     }
-    
+
     50% {
         transform: translateY(10px);
     }
-    
+
     100% {
         transform: translateY(-10px);
-    }   
+    }
 }
-@keyframes icon1{
+
+@keyframes icon1 {
     0% {
         transform: translateY(10px);
     }
-    
+
     50% {
         transform: translateY(-10px);
     }
-    
+
     100% {
         transform: translateY(10px);
-    }   
+    }
 }
-@keyframes icon3{
+
+@keyframes icon3 {
     0% {
         transform: translateY(10px);
     }
-    
+
     50% {
         transform: translateY(-10px);
     }
-    
+
     100% {
         transform: translateY(10px);
-    }   
+    }
+}
+
+@keyframes header {
+    0% {
+        text-shadow: 0px 4px 10px rgba(255, 0, 140, 0.9);
+    }
+
+    50% {
+        text-shadow: 0px 4px 10px rgba(0, 17, 255, 0.9);
+    }
+
+    100% {
+        text-shadow: 0px 4px 10px rgba(255, 0, 140, 0.9);
+    }
 }
 
 /*--========================== ANIMAÇÕES =========================--*/
 
 .animacao {
     background-image: url(images/002-mulher-azul-512.png);
-    background-size:contain;
+    background-size: contain;
     animation: troca-imagem 3s infinite ease-in-out;
 }
+
 .animacao-rodape {
     background-image: url(images/icons/002-mulher-azul-icon-32.png);
     animation: troca-imagem-rodape 3s infinite ease-in-out;
-}    
+}
 
 /*--========================== RODAPE ==========================--*/
 
-.rodape{
+.rodape {
     display: flex;
     justify-content: center;
     position: relative;
     clear: both;
 }
 
-.teste2{
+.teste2 {
     height: 32px;
     width: 32px;
 }
 
-.rodape a{
+.rodape a {
     margin-left: 10px;
     width: 32px;
     height: 32px;
     text-decoration: none;
 }
 
-.rodape p{
+.rodape p {
     position: absolute;
     bottom: 1px;
 }
-
-
-
-
-
-
