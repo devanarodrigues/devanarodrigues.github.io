@@ -108,16 +108,41 @@ header>h2 {
 
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
 
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #222222;
+    min-height: 100vh;
+}
+main:last-child{
+    margin-bottom: 40px;
+}
+#apresentacao{
+    width: 900px;
+    height: 400px;
+    background-color: #6d1919;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+#apresentacao h1{
+    text-align: center;
+}
+#apresentacao p{
+    margin: 20px 40px;
+}
+
 .secao-principal{
-    min-height: 680px;
     max-height: 1440px;
 }
 
 .teste {
     width: 350px;
     height: 350px;
-    margin: auto;
-    margin-top: 165px;
+    margin: 50px auto;
     padding: 0;
 }
 #container a{
@@ -127,19 +152,21 @@ header>h2 {
 /*--- MAIN --*/
 main {
     background-color: rgb(68, 30, 51);
-    width: 800px;
-    min-height: 350px;
+    width: 900px;
+    min-height: 400px;
     margin: auto;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 main p {
-    margin: auto 10px;
+    margin: 20px 40px;
 }
 
-h1 {
+main h1 {
     background-color: rgb(80, 34, 59);
     text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
