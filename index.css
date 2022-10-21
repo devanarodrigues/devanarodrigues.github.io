@@ -396,6 +396,7 @@ main h1 {
 }
 #show-details{
     display: none;
+    transition: 2s;
 }
 .fixed{
     display: flex;

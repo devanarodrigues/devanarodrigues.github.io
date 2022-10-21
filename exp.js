@@ -2,6 +2,8 @@ function expandir() {
     var display = document.getElementById('show-details').style.display;
     if(display == "block")
         document.getElementById('show-details').style.display = 'none';
-    else
+        else
         document.getElementById('show-details').style.display = 'block';
-}
+    }
+
+    
