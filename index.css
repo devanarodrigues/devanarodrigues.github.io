@@ -315,28 +315,29 @@ main h1 {
 
 .projeto1 {
     background-image: url(images/print-dc.png);
-    background-color: #1C1C1C;
     background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
-    width: 95%;
+    width: 98%;
     height: 720px;
     margin: 20px auto;
     border-radius: 15px;
 }
 
+
 .projeto1 p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 710px;
-    width: 100%;
+    margin: auto auto;
+    margin-top: 740px;
+    width: 34%;
     height: 50px;
     background-color: azure;
     color: #000;
     transition: 0.25s;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+    border-radius: 10px;
     font-size: 1.25em;
     font-weight: bolder;
 }
@@ -356,7 +357,18 @@ main h1 {
 }
 
 .detalhes-projeto{
-    background-color: rgb(15, 95, 68);
+    background-color: rgba(0, 17, 255, 0.24);
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.detalhes-projeto p{
+    margin: 20px;
+    
+}
+.botao{
     width: 50%;
     margin: auto;
     margin-top: 50px;
@@ -366,7 +378,30 @@ main h1 {
 .detalhes-projeto h3{
     text-align: center;
 }
+.botao button{
+    width: 50%;
+    margin: auto 25%;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(255, 0, 140, 0.9);
+    color: whitesmoke;
+    transition: 0.5s;
+    margin-bottom: 5px;
+}
 
+.botao button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 17, 255, 0.9);
+    color: whitesmoke;
+}
+#show-details{
+    display: none;
+}
+.fixed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*----*/
 .projeto2 {
     display: none;
