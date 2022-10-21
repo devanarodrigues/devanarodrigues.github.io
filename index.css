@@ -298,7 +298,7 @@ main h1 {
     background-color: #222222;
     padding-bottom: 90px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -405,34 +405,27 @@ main h1 {
 }
 /*----*/
 .projeto2 {
-    display: none;
-    background-image: url(/images/loading.gif);
-    background-size: contain;
-    background-color: #1C1C1C;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-width: 250px;
-    max-width: 500px;
-    height: 253px;
+    width: 98%;
+    height: 720px;
     margin: 20px auto;
     border-radius: 15px;
 }
 
 .projeto2 p {
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 240px;
-    width: 100%;
+    align-items: center;*/
+    margin: auto;
+    margin-top: 20px;
+    width: 34%;
     height: 50px;
     background-color: azure;
     color: #000;
     transition: 0.25s;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+    border-radius: 10px;
     font-size: 1.25em;
     font-weight: bolder;
+    text-align: center;
 }
 
 .projeto2 p:hover {
@@ -447,6 +440,9 @@ main h1 {
 .projeto2 a:hover {
     background-color: black;
     color: white;
+}
+.gear{
+    margin: auto 50%;
 }
 
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
