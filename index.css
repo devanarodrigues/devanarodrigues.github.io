@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     padding: 0;
 
-    width: 1200px;
+    width: 88%;
 
     border-right: 0;
     animation: troca-cor-container 3s infinite ease-in-out;
@@ -178,6 +178,7 @@ main {
 
 main p {
     margin: 20px 40px;
+    font-size: 1.3em;
 }
 
 main h1 {
@@ -195,7 +196,7 @@ main h1 {
     align-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 240px;
+    margin-top: 290px;
 }
 
 .icon1 {
@@ -245,8 +246,8 @@ main h1 {
 
 /*--- CARDS --*/
 .card-exp {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin: -20px 100px;
     padding: 20px;
     border-radius: 15px;
@@ -256,8 +257,8 @@ main h1 {
 }
 
 .card-hab {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin: -20px 100px;
     padding: 20px;
     border-radius: 15px;
@@ -268,17 +269,27 @@ main h1 {
 }
 
 .card-hab h4 {
+    font-size: 1.5em;
     text-align: center;
 }
 
 .card-exp h4 {
+    font-size: 1.5em;
     text-align: center;
 }
-
+.card-hab p{
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+.card-exp p{
+    margin-top: 10px;
+    font-size: 1.3em;
+}
 
 /*--- SEÇÃO 2 --*/
 .content {
     display: block;
+    width: 100%;
 }
 
 .secao2 {
@@ -307,8 +318,8 @@ main h1 {
     background-color: #1C1C1C;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 500px;
-    height: 253px;
+    width: 95%;
+    height: 720px;
     margin: 20px auto;
     border-radius: 15px;
 }
@@ -317,7 +328,7 @@ main h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 240px;
+    margin-top: 710px;
     width: 100%;
     height: 50px;
     background-color: azure;
@@ -344,8 +355,21 @@ main h1 {
     color: white;
 }
 
+.detalhes-projeto{
+    background-color: rgb(15, 95, 68);
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.detalhes-projeto h3{
+    text-align: center;
+}
+
 /*----*/
 .projeto2 {
+    display: none;
     background-image: url(/images/loading.gif);
     background-size: contain;
     background-color: #1C1C1C;
