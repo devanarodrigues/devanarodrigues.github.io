@@ -227,7 +227,7 @@ main h1 {
     background-color: #1C1C1C;
     padding-bottom: 90px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -659,4 +659,10 @@ main h1 {
 .rodape p {
     position: absolute;
     bottom: 1px;
+}
+
+/*--========================== MEDIA QUERY ==========================--*/
+@media (max-width: 1295px)
+{
+    
 }
