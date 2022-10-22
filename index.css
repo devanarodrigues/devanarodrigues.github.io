@@ -300,11 +300,12 @@ main h1 {
     width: 100%;
     min-height: 680px;
     background-color: #222222;
-    padding-bottom: 90px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .secao2>h3 {
