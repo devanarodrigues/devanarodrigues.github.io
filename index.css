@@ -87,7 +87,7 @@ nav {
 }
 
 #menu a:hover {
-    background-color: #6d1919;
+    background-color: rgba(104, 104, 104, 0.37);
     border-radius: 3px;
 }
 
@@ -192,11 +192,10 @@ main h1 {
 /*--- SEÇÃO 1 --*/
 .icons {
     display: flex;
-    justify-content: space-evenly;
-    align-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 290px;
+    margin-top: 50px;
+    justify-content: space-between;
 }
 
 .icon1 {
@@ -204,7 +203,7 @@ main h1 {
     height: 64px;
     background-image: url(/images/icons/html-5.png);
     animation: icon1 3s infinite ease;
-
+    margin: auto 20px;
 }
 
 .icon2 {
@@ -212,6 +211,7 @@ main h1 {
     height: 64px;
     background-image: url(/images/icons/css-3.png);
     animation: icon2 3s infinite ease;
+    margin: auto 20px;
 }
 
 .icon3 {
@@ -219,6 +219,7 @@ main h1 {
     height: 64px;
     background-image: url(/images/icons/js.png);
     animation: icon3 3s infinite ease;
+    margin: auto 20px;
 }
 
 .secao1 {
@@ -246,25 +247,27 @@ main h1 {
 
 /*--- CARDS --*/
 .card-exp {
-    width: 500px;
-    height: 500px;
-    margin: -20px 100px;
+    background-color: rgba(0, 17, 255, 0.24);
+    width: 700px;
+    margin: 10px auto;
+    height: 250px;
     padding: 20px;
     border-radius: 15px;
-    background-color: rgba(0, 17, 255, 0.24);
     /*animation:  troca-cor-card1 10s infinite ease-in-out;*/
 
 }
 
 .card-hab {
-    width: 500px;
-    height: 500px;
-    margin: -20px 100px;
+    width: 700px;
+    height: 250px;
+    margin: 10px auto;
     padding: 20px;
     border-radius: 15px;
-    float: right;
-    clear: right;
     background-color: rgba(255, 0, 140, 0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /*   animation:  troca-cor-card2 10s infinite ease-in-out;*/
 }
 
@@ -282,6 +285,7 @@ main h1 {
     font-size: 1.3em;
 }
 .card-exp p{
+    text-align: center;
     margin-top: 10px;
     font-size: 1.3em;
 }
@@ -296,11 +300,12 @@ main h1 {
     width: 100%;
     min-height: 680px;
     background-color: #222222;
-    padding-bottom: 90px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .secao2>h3 {
@@ -366,7 +371,7 @@ main h1 {
 }
 .detalhes-projeto p{
     margin: 20px;
-    
+    text-align: center;
 }
 .botao{
     width: 50%;
@@ -383,7 +388,7 @@ main h1 {
     margin: auto 25%;
     border-radius: 10px;
     border: 0;
-    background-color: rgba(255, 0, 140, 0.9);
+    background-color: rgba(255, 0, 140, 0.24);
     color: whitesmoke;
     transition: 0.5s;
     margin-bottom: 5px;
@@ -391,7 +396,7 @@ main h1 {
 
 .botao button:hover{
     cursor: pointer;
-    background-color: rgba(0, 17, 255, 0.9);
+    background-color: rgba(0, 17, 255, 0.24);
     color: whitesmoke;
 }
 #show-details{
@@ -448,7 +453,7 @@ main h1 {
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
 
 .rodape {
-    height: 100px;
+    height: 50px;
     background-color: #1C1C1C;
     text-align: center;
     padding-top: 20px;
@@ -630,11 +635,6 @@ main h1 {
     animation: troca-imagem 3s infinite ease-in-out;
 }
 
-.animacao-rodape {
-    background-image: url(images/icons/002-mulher-azul-icon-32.png);
-    animation: troca-imagem-rodape 3s infinite ease-in-out;
-}
-
 /*--========================== RODAPE ==========================--*/
 
 .rodape {
@@ -659,10 +659,4 @@ main h1 {
 .rodape p {
     position: absolute;
     bottom: 1px;
-}
-
-/*--========================== MEDIA QUERY ==========================--*/
-@media (max-width: 1295px)
-{
-    
 }
