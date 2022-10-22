@@ -48,6 +48,11 @@ nav {
     border-bottom-left-radius: 10px;
     margin-bottom: 25px;
     animation: troca-cor-nav 3s infinite ease-in-out;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 #logo {
@@ -66,6 +71,7 @@ nav {
 
 #menu {
     float: right;
+    clear: both;
 }
 
 #menu ul {
@@ -107,7 +113,8 @@ header>h2 {
     margin-top: 20px;
     font-size: 3em;
 }
-header h1{
+
+header h1 {
     font-weight: 200;
 }
 
@@ -280,11 +287,13 @@ main h1 {
     font-size: 1.5em;
     text-align: center;
 }
-.card-hab p{
+
+.card-hab p {
     margin-top: 10px;
     font-size: 1.3em;
 }
-.card-exp p{
+
+.card-exp p {
     text-align: center;
     margin-top: 10px;
     font-size: 1.3em;
@@ -336,8 +345,9 @@ main h1 {
     justify-content: center;
     align-items: center;
     margin: auto auto;
+    width: auto;
+    margin: 20px;
     margin-top: 740px;
-    width: 34%;
     height: 50px;
     background-color: azure;
     color: #000;
@@ -361,29 +371,34 @@ main h1 {
     color: white;
 }
 
-.detalhes-projeto{
+.detalhes-projeto {
     background-color: rgba(0, 17, 255, 0.24);
     width: 50%;
     margin: auto;
     margin-top: 5px;
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
-.detalhes-projeto p{
+
+.detalhes-projeto p {
     margin: 20px;
     text-align: center;
 }
-.botao{
+
+.botao {
     width: 50%;
     margin: auto;
     margin-top: 50px;
     padding: 10px;
     border-radius: 10px;
 }
-.detalhes-projeto h3{
+
+.detalhes-projeto h3 {
     text-align: center;
 }
-.botao button{
+
+.botao button {
     width: 50%;
     margin: auto 25%;
     border-radius: 10px;
@@ -394,20 +409,23 @@ main h1 {
     margin-bottom: 5px;
 }
 
-.botao button:hover{
+.botao button:hover {
     cursor: pointer;
     background-color: rgba(0, 17, 255, 0.24);
     color: whitesmoke;
 }
-#show-details{
+
+#show-details {
     display: none;
     transition: 2s;
 }
-.fixed{
+
+.fixed {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /*----*/
 .projeto2 {
     width: 98%;
@@ -446,7 +464,8 @@ main h1 {
     background-color: black;
     color: white;
 }
-.gear{
+
+.gear {
     margin: auto 50%;
 }
 
@@ -659,4 +678,170 @@ main h1 {
 .rodape p {
     position: absolute;
     bottom: 1px;
+}
+
+/*--========================== RESPONSIVIDADE ==========================--*/
+@media (max-width:1352) {
+    .projeto1 p {
+        width: auto;
+        margin: 20px;
+        margin-top: 40px;
+    }
+
+    #logo {
+        border-bottom-left-radius: 0px;
+    }
+
+    nav {
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media (max-width: 1068px) {
+    main p {
+        font-size: 1.1em;
+    }
+
+    #logo {
+        border-bottom-left-radius: 0px;
+    }
+
+    nav {
+        border-bottom-right-radius: 10px;
+    }
+
+    main {
+        width: 700px;
+    }
+
+    .secao2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-exp p,
+    .card-hab p {
+        font-size: 1.1em;
+    }
+
+    .card-exp,
+    .card-hab {
+        width: 700px;
+    }
+
+    .botao {
+        margin-top: 0;
+    }
+
+    .projeto1 {
+        margin-top: 0;
+    }
+
+    .projeto1 p {
+        margin: 20px;
+        margin-top: 70%;
+    }
+
+    .botao button {
+        margin-top: 10px auto;
+    }
+
+    .detalhes-projeto {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 980px) {
+
+    nav {
+        border-bottom-right-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        height: 400px;
+        width: 97%;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #menu li {
+        display: block;
+        width: 100px;
+    }
+
+    #menu ul {
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    #logo {
+        width: 100%;
+        background-position-x: 50%;
+        border-bottom-left-radius: 0px;
+    }
+
+    main p {
+        font-size: 1.1em;
+    }
+
+    main {
+        width: auto;
+        margin: 20px;
+    }
+
+    .card-exp p,
+    .card-hab p {
+        font-size: 1.1em;
+
+    }
+
+    .card-exp,
+    .card-hab {
+        width: auto;
+        min-height: 250px;
+        height: auto;
+        margin: 20px;
+    }
+
+    .secao2 {
+        padding: 0;
+        height: auto;
+    }
+
+    .secao2 h3 {
+        height: 30px;
+    }
+
+    .projeto1 p {
+        padding: 0;
+        width: auto;
+        margin: 20px;
+        margin-top: 70%;
+    }
+
+    .botao {
+        width: auto;
+        margin: 10px;
+    }
+
+    .botao button {
+        width: 100%;
+        margin: auto 0%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .detalhes-projeto {
+        width: 90%;
+        width: auto;
+        margin: 20px;
+        margin-top: 0px;
+    }
 }
