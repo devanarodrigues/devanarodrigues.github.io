@@ -681,7 +681,7 @@ main h1 {
 }
 
 /*--========================== RESPONSIVIDADE ==========================--*/
-@media (max-width:1352) {
+@media screen and (max-width:1352) {
     .projeto1 p {
         width: auto;
         margin: 20px;
@@ -696,62 +696,7 @@ main h1 {
         border-bottom-right-radius: 10px;
     }
 }
-
-@media (max-width: 1068px) {
-    main p {
-        font-size: 1.1em;
-    }
-
-    #logo {
-        border-bottom-left-radius: 0px;
-    }
-
-    nav {
-        border-bottom-right-radius: 10px;
-    }
-
-    main {
-        width: 700px;
-    }
-
-    .secao2 {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .card-exp p,
-    .card-hab p {
-        font-size: 1.1em;
-    }
-
-    .card-exp,
-    .card-hab {
-        width: 700px;
-    }
-
-    .botao {
-        margin-top: 0;
-    }
-
-    .projeto1 {
-        margin-top: 0;
-    }
-
-    .projeto1 p {
-        margin: 20px;
-        margin-top: 70%;
-    }
-
-    .botao button {
-        margin-top: 10px auto;
-    }
-
-    .detalhes-projeto {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
 
     nav {
         border-bottom-right-radius: 10px;
@@ -851,5 +796,59 @@ main h1 {
         width: auto;
         margin: 20px;
         margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    main p {
+        font-size: 1.1em;
+    }
+
+    #logo {
+        border-bottom-left-radius: 0px;
+    }
+
+    nav {
+        border-bottom-right-radius: 10px;
+    }
+
+    main {
+        width: 700px;
+    }
+
+    .secao2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-exp p,
+    .card-hab p {
+        font-size: 1.1em;
+    }
+
+    .card-exp,
+    .card-hab {
+        width: 700px;
+    }
+
+    .botao {
+        margin-top: 0;
+    }
+
+    .projeto1 {
+        margin-top: 0;
+    }
+
+    .projeto1 p {
+        margin: 20px;
+        margin-top: 70%;
+    }
+
+    .botao button {
+        margin-top: 10px auto;
+    }
+
+    .detalhes-projeto {
+        margin-bottom: 20px;
     }
 }
