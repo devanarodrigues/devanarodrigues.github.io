@@ -1,0 +1,173 @@
+/*--========================== RESPONSIVIDADE ==========================--*/
+@media screen and (max-width:1352) {
+    .projeto1 p {
+        width: auto;
+        margin: 20px;
+        margin-top: 40px;
+    }
+
+    #logo {
+        border-bottom-left-radius: 0px;
+    }
+
+    nav {
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    nav {
+        border-bottom-right-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        height: 400px;
+        width: 97%;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #menu li {
+        display: block;
+        width: 100px;
+    }
+
+    #menu ul {
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    #logo {
+        width: 100%;
+        background-position-x: 50%;
+        border-bottom-left-radius: 0px;
+    }
+
+    main p {
+        font-size: 1.1em;
+    }
+
+    main {
+        max-width: 400px;
+        min-width: 150px;
+        min-height: 250px;
+        margin: 20px auto;
+    }
+
+    .card-exp p,
+    .card-hab p {
+        font-size: 1.1em;
+
+    }
+
+    .secao1 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-exp,
+    .card-hab {
+        max-width: 350px;
+        min-width: 150px;
+        min-height: 250px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .secao2 {
+        padding: 0;
+        height: auto;
+    }
+
+    .secao2 h3 {
+        height: 30px;
+    }
+
+    .projeto1 p {
+        padding: 0;
+        width: auto;
+        margin: 20px;
+        margin-top: 70%;
+    }
+
+    .botao {
+        width: auto;
+        margin: 10px;
+    }
+
+    .botao button {
+        width: 100%;
+        margin: auto 0%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .detalhes-projeto {
+        width: 90%;
+        width: auto;
+        margin: 20px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    main p {
+        font-size: 1.1em;
+    }
+
+    #logo {
+        border-bottom-left-radius: 0px;
+    }
+
+    nav {
+        border-bottom-right-radius: 10px;
+    }
+
+    main {
+        width: 700px;
+    }
+
+    .secao2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-exp p,
+    .card-hab p {
+        font-size: 1.1em;
+    }
+
+    .card-exp,
+    .card-hab {
+        width: 700px;
+    }
+
+    .botao {
+        margin-top: 0;
+    }
+
+    .projeto1 {
+        margin-top: 0;
+    }
+
+    .projeto1 p {
+        margin: 20px;
+        margin-top: 70%;
+    }
+
+    .botao button {
+        margin-top: 10px auto;
+    }
+
+    .detalhes-projeto {
+        margin-bottom: 20px;
+    }
+}
