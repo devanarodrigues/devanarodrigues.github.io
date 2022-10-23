@@ -681,7 +681,7 @@ main h1 {
 }
 
 /*--========================== RESPONSIVIDADE ==========================--*/
-/*@media screen and (max-width:1352) {
+@media screen and (max-width:1352) {
     .projeto1 p {
         width: auto;
         margin: 20px;
@@ -851,4 +851,4 @@ main h1 {
     .detalhes-projeto {
         margin-bottom: 20px;
     }
-}*/
+}
