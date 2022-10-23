@@ -1,4 +1,4 @@
-/*--========================== RESPONSIVIDADE ==========================--*/
+/*/*--========================== RESPONSIVIDADE ==========================--*/
 @media screen and (max-width:1352) {
     .projeto1 p {
         width: auto;
@@ -13,9 +13,9 @@
     nav {
         border-bottom-right-radius: 10px;
     }
-}
+} */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 480px) {
 
     nav {
         border-bottom-right-radius: 10px;
@@ -37,7 +37,7 @@
 
     #menu li {
         display: block;
-        width: 100px;
+        width: 50px;
     }
 
     #menu ul {
@@ -79,7 +79,7 @@
         min-width: 150px;
         min-height: 250px;
         height: auto;
-        margin: 20px auto;
+        margin: 10px auto;
     }
 
     .secao2 {
@@ -94,7 +94,7 @@
     .projeto1 p {
         padding: 0;
         width: auto;
-        margin: 20px;
+        margin: 10px;
         margin-top: 70%;
     }
 
@@ -113,7 +113,7 @@
     .detalhes-projeto {
         width: 90%;
         width: auto;
-        margin: 20px;
+        margin: 10px;
         margin-top: 0px;
     }
 }
