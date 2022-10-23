@@ -178,7 +178,7 @@ main:last-child {
 main {
     background-color: rgb(68, 30, 51);
     width: 900px;
-    min-height: 400px;
+    min-height: 350px;
     margin: auto;
     border-radius: 10px;
 }
@@ -257,7 +257,7 @@ main h1 {
     background-color: rgba(0, 17, 255, 0.24);
     width: 700px;
     margin: 10px auto;
-    height: 250px;
+    height: 180px;
     padding: 20px;
     border-radius: 15px;
     /*animation:  troca-cor-card1 10s infinite ease-in-out;*/
@@ -307,8 +307,8 @@ main h1 {
 
 .secao2 {
     width: 100%;
-    min-height: 680px;
     background-color: #222222;
+    min-height: 890px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -334,9 +334,10 @@ main h1 {
     background-position-y: center;
     background-repeat: no-repeat;
     width: 98%;
-    height: 720px;
+    height: 50%;
     margin: 20px auto;
     border-radius: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -345,9 +346,8 @@ main h1 {
     justify-content: center;
     align-items: center;
     margin: auto auto;
-    width: auto;
+    width: 90%;
     margin: 20px;
-    margin-top: 740px;
     height: 50px;
     background-color: azure;
     color: #000;
@@ -371,6 +371,23 @@ main h1 {
     color: white;
 }
 
+.acessar {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.acessar a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+    margin: 20px auto;
+}
+
 .detalhes-projeto {
     background-color: rgba(0, 17, 255, 0.24);
     width: 50%;
@@ -386,10 +403,11 @@ main h1 {
     text-align: center;
 }
 
+
 .botao {
-    width: 50%;
+    width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 500px;
     padding: 10px;
     border-radius: 10px;
 }
@@ -399,8 +417,8 @@ main h1 {
 }
 
 .botao button {
-    width: 50%;
-    margin: auto 25%;
+    width: 100%;
+    margin: auto;
     border-radius: 10px;
     border: 0;
     background-color: rgba(255, 0, 140, 0.24);
@@ -475,7 +493,10 @@ main h1 {
     height: 50px;
     background-color: #1C1C1C;
     text-align: center;
-    padding-top: 20px;
+}
+
+.rodape>p {
+    margin-bottom: 10px;
 }
 
 /*--========================== IMAGENS =========================--*/
@@ -736,7 +757,7 @@ main h1 {
     }
 }
 
-@media screen and (max-width:1023) {
+@media screen and (max-width:1024) {
     .projeto1 p {
         width: auto;
         margin: 20px;
@@ -782,11 +803,15 @@ main h1 {
     #menu li {
         display: block;
         width: 100px;
+        padding-left: 0;
     }
-
+    
     #menu ul {
         margin: auto;
-        padding-left: 0px;
+        padding-left: 0;
+    }
+    #menu a{
+        padding-left: 0;
     }
 
     #logo {
@@ -803,6 +828,10 @@ main h1 {
         width: 90%;
         min-height: 250px;
         margin: 20px auto;
+    }
+
+    .teste {
+        margin: 0;
     }
 
     .card-exp p,
@@ -833,6 +862,10 @@ main h1 {
         height: 30px;
     }
 
+    .projeto1 {
+        height: 35%;
+    }
+
     .projeto1 p {
         padding: 0;
         width: auto;
@@ -860,13 +893,6 @@ main h1 {
     }
 }
 
-@media (max-width: 375px) {
-    .teste {
-        width: 290px;
-        height: 290px;
-    }
-}
-
 @media (max-width: 425px) {
     main {
         max-width: 300px;
@@ -875,9 +901,23 @@ main h1 {
         margin: 20px auto;
     }
 
+    main>h1 {
+        font-size: 1.3em;
+        margin-top: 15px;
+    }
+
+    main>p {
+        margin-top: 5px;
+    }
+
     .card-exp p,
     .card-hab p {
         font-size: 1.1em;
+    }
+
+    .card-exp h4,
+    .card-hab h4 {
+        font-size: 1.2em;
     }
 
     .card-exp,
@@ -888,9 +928,65 @@ main h1 {
         height: auto;
         margin: 20px auto;
     }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .icon1 {
+        margin-top: 20px;
+    }
+
+    .icon2 {
+        margin-top: 40px;
+    }
+
+    .icon3 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .secao2 {
+        min-height: 540px;
+    }
+
+    .secao1>h3 {
+        margin: auto;
+        font-size: 1.7em;
+    }
+
+    .secao2>h3 {
+        margin: auto;
+        font-size: 1.7em;
+    }
+
+    .projeto1 {
+        height: 30%;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .teste {
+        width: 340px;
+        height: 340px;
+    }
+
+    .projeto1 {
+        height: 17%;
+    }
+
+    .secao1>h3 {
+        font-size: 1.6em;
+    }
 }
 
 @media (max-width: 320px) {
+    #logo{
+        height: 100px;
+        background-position-y: 50%;
+    }
     header h2 {
         font-size: 2em;
     }
@@ -902,7 +998,7 @@ main h1 {
     main {
         width: 90%;
         min-height: 200px;
-        margin: 20px 5px;
+        margin: 0px 5px;
         padding: 5px;
         font-size: 0.8em;
     }
@@ -921,7 +1017,11 @@ main h1 {
     }
 
     .teste {
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .projeto1 {
+        height: 15%;
     }
 }
