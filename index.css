@@ -378,6 +378,7 @@ main h1 {
     font-weight: bolder;
     color: #000;
     transition: 0.3s;
+    margin: 0; 
 }
 
 .acessar:hover {
@@ -393,6 +394,7 @@ main h1 {
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
+    min-height: 300px;
 }
 
 .detalhes-projeto p {
@@ -404,7 +406,6 @@ main h1 {
 .botao {
     width: 90%;
     margin: auto;
-    margin-top: 500px;
     padding: 10px;
     border-radius: 10px;
 }
@@ -441,7 +442,7 @@ main h1 {
     align-items: center;
 }
 
-/*----*/
+/*----
 .projeto2 {
     width: 98%;
     height: 720px;
@@ -452,7 +453,7 @@ main h1 {
 .projeto2 p {
     /*display: flex;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
     margin: auto;
     margin-top: 20px;
     width: 34%;
@@ -483,6 +484,7 @@ main h1 {
 .gear {
     margin: auto 50%;
 }
+*/
 
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
 
@@ -865,7 +867,7 @@ main h1 {
     }
 
     .projeto1 {
-        height: 35%;
+        height: 30%;
     }
 
     .projeto1 p {
@@ -985,7 +987,7 @@ main h1 {
     }
 
     .secao2 {
-        min-height: 540px;
+        min-height: 300px;
     }
 
     .secao1>h3 {
