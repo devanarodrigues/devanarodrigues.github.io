@@ -357,10 +357,6 @@ main h1 {
     font-weight: bolder;
 }
 
-.projeto1 p:hover {
-    background-color: #222222;
-    color: white;
-}
 
 .projeto1 a {
     text-decoration: none;
@@ -374,18 +370,19 @@ main h1 {
 .acessar {
     width: 90%;
     height: auto;
-    margin: 0 auto;
     border-radius: 10px;
     background-color: aliceblue;
     text-align: center;
     padding: 10px 0;
-}
-
-.acessar a {
     text-decoration: none;
     font-weight: bolder;
     color: #000;
-    margin: 20px auto;
+    transition: 0.3s;
+}
+
+.acessar:hover {
+    background-color: #222222;
+    color: white;
 }
 
 .detalhes-projeto {
@@ -782,6 +779,10 @@ main h1 {
         font-size: 1.2em;
     }
 
+    #container {
+        width: 90%;
+    }
+
     nav {
         border-bottom-right-radius: 10px;
         display: flex;
@@ -892,11 +893,43 @@ main h1 {
         margin: 20px;
         margin-top: 0px;
     }
+
+    #container {
+        margin-top: 60px;
+    }
+
+    @keyframes troca-cor-container {
+        0% {
+            box-shadow: 0 0 10px rgba(255, 0, 140, 0.9);
+        }
+
+        50% {
+            box-shadow: 0 0 10px rgba(0, 17, 255, 0.9);
+        }
+
+        100% {
+            box-shadow: 0 0 10px rgba(255, 0, 140, 0.9);
+        }
+    }
+
+    @keyframes troca-cor-nav {
+        0% {
+            box-shadow: 0 0 5px rgba(255, 0, 140, 0.9);
+        }
+
+        50% {
+            box-shadow: 0 0 5px rgba(0, 17, 255, 0.9);
+        }
+
+        100% {
+            box-shadow: 0 0 5px rgba(255, 0, 140, 0.9);
+        }
+    }
 }
 
 @media (max-width: 425px) {
     nav {
-        width: 94%;
+        width: 95%;
     }
 
     main {
@@ -970,12 +1003,69 @@ main h1 {
         width: 100%;
         margin-top: 15px;
     }
+
+    @keyframes troca-cor-container {
+        0% {
+            box-shadow: 0 0 10px rgba(255, 0, 140, 0.9);
+        }
+
+        50% {
+            box-shadow: 0 0 10px rgba(0, 17, 255, 0.9);
+        }
+
+        100% {
+            box-shadow: 0 0 10px rgba(255, 0, 140, 0.9);
+        }
+    }
+
+    @keyframes troca-cor-nav {
+        0% {
+            box-shadow: 0 0 5px rgba(255, 0, 140, 0.9);
+        }
+
+        50% {
+            box-shadow: 0 0 5px rgba(0, 17, 255, 0.9);
+        }
+
+        100% {
+            box-shadow: 0 0 5px rgba(255, 0, 140, 0.9);
+        }
+    }
 }
 
-@media (max-width: 375px) {
-    nav {
-        width: 93%;
+
+@media (max-width: 396) {
+    .secao2 {
+        height: 890px;
+        padding: auto 0;
     }
+
+    .detalhes-projeto {
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .detalhes-projeto>p {
+        margin: 0px;
+        font-size: 0.3em;
+    }
+
+    .botao {
+        margin-top: 100px;
+    }
+
+    .projeto1 {
+        height: 50%;
+    }
+
+    #show-details {
+        display: block;
+    }
+}
+
+@media (max-width: 396px) {
+
 
     .teste {
         width: 340px;
@@ -992,9 +1082,6 @@ main h1 {
 }
 
 @media (max-width: 320px) {
-    nav {
-        width: 91%;
-    }
 
     #logo {
         height: 100px;
@@ -1036,6 +1123,13 @@ main h1 {
     }
 
     .projeto1 {
-        height: 15%;
+        height: 35%;
+    }
+
+    .detalhes-projeto {
+        margin: 5px;
+        height: 140px;
+        font-size: 0.8em;
     }
 }
+
