@@ -681,125 +681,8 @@ main h1 {
 }
 
 /*--========================== RESPONSIVIDADE ==========================--*/
-@media screen and (max-width:1352) {
-    .projeto1 p {
-        width: auto;
-        margin: 20px;
-        margin-top: 40px;
-    }
 
-    #logo {
-        border-bottom-left-radius: 0px;
-    }
-
-    nav {
-        border-bottom-right-radius: 10px;
-    }
-}
-@media screen and (max-width: 1080px) {
-
-    nav {
-        border-bottom-right-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        margin: auto;
-        height: 400px;
-        width: 97%;
-    }
-
-    #menu {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    #menu li {
-        display: block;
-        width: 100px;
-    }
-
-    #menu ul {
-        margin: auto;
-        padding-left: 0px;
-    }
-
-    #logo {
-        width: 100%;
-        background-position-x: 50%;
-        border-bottom-left-radius: 0px;
-    }
-
-    main p {
-        font-size: 1.1em;
-    }
-
-    main {
-        max-width: 400px;
-        min-width: 150px;
-        min-height: 250px;
-        margin: 20px auto;
-    }
-
-    .card-exp p,
-    .card-hab p {
-        font-size: 1.1em;
-
-    }
-
-    .secao1 {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .card-exp,
-    .card-hab {
-        max-width: 350px;
-        min-width: 150px;
-        min-height: 250px;
-        height: auto;
-        margin: 20px auto;
-    }
-
-    .secao2 {
-        padding: 0;
-        height: auto;
-    }
-
-    .secao2 h3 {
-        height: 30px;
-    }
-
-    .projeto1 p {
-        padding: 0;
-        width: auto;
-        margin: 20px;
-        margin-top: 70%;
-    }
-
-    .botao {
-        width: auto;
-        margin: 10px;
-    }
-
-    .botao button {
-        width: 100%;
-        margin: auto 0%;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-
-    .detalhes-projeto {
-        width: 90%;
-        width: auto;
-        margin: 20px;
-        margin-top: 0px;
-    }
-}
-
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1440px) {
     main p {
         font-size: 1.1em;
     }
@@ -850,5 +733,195 @@ main h1 {
 
     .detalhes-projeto {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:1023) {
+    .projeto1 p {
+        width: auto;
+        margin: 20px;
+        margin-top: 40px;
+    }
+
+    #logo {
+        border-bottom-left-radius: 0px;
+    }
+
+    nav {
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h2 {
+        font-size: 2.5em;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav {
+        border-bottom-right-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        height: 400px;
+        width: 97%;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #menu li {
+        display: block;
+        width: 100px;
+    }
+
+    #menu ul {
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    #logo {
+        width: 100%;
+        background-position-x: 50%;
+        border-bottom-left-radius: 0px;
+    }
+
+    main p {
+        font-size: 1.1em;
+    }
+
+    main {
+        width: 90%;
+        min-height: 250px;
+        margin: 20px auto;
+    }
+
+    .card-exp p,
+    .card-hab p {
+        font-size: 1.1em;
+
+    }
+
+    .secao1 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-exp,
+    .card-hab {
+        width: 84%;
+        min-height: 250px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .secao2 {
+        padding: 0;
+        height: auto;
+    }
+
+    .secao2 h3 {
+        height: 30px;
+    }
+
+    .projeto1 p {
+        padding: 0;
+        width: auto;
+        margin: 20px;
+        margin-top: 70%;
+    }
+
+    .botao {
+        width: auto;
+        margin: 10px;
+    }
+
+    .botao button {
+        width: 100%;
+        margin: auto 0%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .detalhes-projeto {
+        width: 90%;
+        width: auto;
+        margin: 20px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    .teste {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+        max-width: 300px;
+        min-width: 100px;
+        min-height: 250px;
+        margin: 20px auto;
+    }
+
+    .card-exp p,
+    .card-hab p {
+        font-size: 1.1em;
+    }
+
+    .card-exp,
+    .card-hab {
+        max-width: 250px;
+        min-width: 100px;
+        min-height: 250px;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 320px) {
+    header h2 {
+        font-size: 2em;
+    }
+
+    header h1 {
+        font-size: 0.9em;
+    }
+
+    main {
+        width: 90%;
+        min-height: 200px;
+        margin: 20px 5px;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    .card-exp p,
+    .card-hab p {
+        font-size: 0.8em;
+    }
+
+    .card-exp,
+    .card-hab {
+        width: 80%;
+        min-height: 250px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .teste {
+        width: 250px;
+        height: 250px;
     }
 }
