@@ -781,6 +781,9 @@ main h1 {
     header h1 {
         font-size: 1.2em;
     }
+    #container{
+        width: 90%;
+    }
 
     nav {
         border-bottom-right-radius: 10px;
@@ -790,7 +793,7 @@ main h1 {
         justify-content: center;
         margin: auto;
         height: 400px;
-        width: 97%;
+        width: 99%;
     }
 
     #menu {
@@ -892,13 +895,45 @@ main h1 {
         margin: 20px;
         margin-top: 0px;
     }
+
+    #container {
+        margin-top: 60px;
+    }
+
+    @keyframes troca-cor-container {
+        0% {
+            border: 3px solid rgba(255, 0, 140, 0.9);
+        }
+
+        50% {
+            border: 3px solid rgba(0, 17, 255, 0.9);
+        }
+
+        100% {
+            border: 3px solid rgba(255, 0, 140, 0.9);
+        }
+    }
+
+    @keyframes troca-cor-nav {
+        0% {
+            border: 3px solid rgba(255, 0, 140, 0.9);
+            border-top: 0px;
+        }
+
+        50% {
+            border: 3px solid rgba(0, 17, 255, 0.9);
+            border-top: 0px;
+        }
+
+        100% {
+            border: 3px solid rgba(255, 0, 140, 0.9);
+            border-top: 0px;
+        }
+    }
 }
 
 @media (max-width: 425px) {
-    nav {
-        width: 94%;
-    }
-
+    
     main {
         max-width: 300px;
         min-width: 100px;
@@ -970,12 +1005,41 @@ main h1 {
         width: 100%;
         margin-top: 15px;
     }
+
+        @keyframes troca-cor-container {
+            0% {
+                border: 2px solid rgba(255, 0, 140, 0.9);
+            }
+    
+            50% {
+                border: 2px solid rgba(0, 17, 255, 0.9);
+            }
+    
+            100% {
+                border: 2px solid rgba(255, 0, 140, 0.9);
+            }
+        }
+    
+        @keyframes troca-cor-nav {
+            0% {
+                border: 2px solid rgba(255, 0, 140, 0.9);
+                border-top: 0px;
+            }
+    
+            50% {
+                border: 2px solid rgba(0, 17, 255, 0.9);
+                border-top: 0px;
+            }
+    
+            100% {
+                border: 2px solid rgba(255, 0, 140, 0.9);
+                border-top: 0px;
+            }
+        }
 }
 
 @media (max-width: 375px) {
-    nav {
-        width: 93%;
-    }
+
 
     .teste {
         width: 340px;
@@ -992,9 +1056,6 @@ main h1 {
 }
 
 @media (max-width: 320px) {
-    nav {
-        width: 91%;
-    }
 
     #logo {
         height: 100px;
