@@ -805,12 +805,13 @@ main h1 {
         width: 100px;
         padding-left: 0;
     }
-    
+
     #menu ul {
         margin: auto;
         padding-left: 0;
     }
-    #menu a{
+
+    #menu a {
         padding-left: 0;
     }
 
@@ -894,6 +895,10 @@ main h1 {
 }
 
 @media (max-width: 425px) {
+    nav {
+        width: 94%;
+    }
+
     main {
         max-width: 300px;
         min-width: 100px;
@@ -968,6 +973,10 @@ main h1 {
 }
 
 @media (max-width: 375px) {
+    nav {
+        width: 93%;
+    }
+
     .teste {
         width: 340px;
         height: 340px;
@@ -983,10 +992,15 @@ main h1 {
 }
 
 @media (max-width: 320px) {
-    #logo{
+    nav {
+        width: 91%;
+    }
+
+    #logo {
         height: 100px;
         background-position-y: 50%;
     }
+
     header h2 {
         font-size: 2em;
     }
