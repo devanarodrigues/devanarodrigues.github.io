@@ -3,7 +3,7 @@
 
 Esse foi o meu segundo projeto, criado para demonstrar minhas habilidades como Dev Front-End. 👩‍💻🧠
 
-📌 Você pode acessar o projeto clicando nesse link: anarodrigues.vercel.app
+📌  Você pode acessar o projeto clicando <a href= "anarodrigues.vercel.app"> AQUI </a>
 
 ## 🚀 Sobre mim
 Eu sou a Ana ✨​, desenvolvedora Front-End. Atualmente estou terminando o ensino médio. Decidi estudar programação como curiosidade e acabei gostando muito de programar. O resto você encontra no "Sobre mim" dentro do portifólio. <3
