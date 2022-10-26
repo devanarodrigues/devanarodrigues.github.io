@@ -8,7 +8,7 @@ Esse foi o meu segundo projeto, criado para demonstrar minhas habilidades como D
 
 ## ​👩‍💻​ Desenvolvimento
 
-Para desenvolver o projeto, foram utilizadas apenas as tecnologias HTML, CSS e JavaScript. A biblioteca de icons FontAwesome também foi manuseada durante o desenvolvimento. Foram aplicados conhecimentos prévios de responsividade, usufruindo do recurso Media Query. 
+Para desenvolver o projeto, foram utilizadas apenas as tecnologias HTML, CSS e JavaScript. As bibliotecas ScrollRevealJS e FontAwesome também foram manuseados durante o desenvolvimento. Foram aplicados conhecimentos prévios de responsividade, usufruindo do recurso Media Query. 
 
 <!--Dentro do portifólio na seção "Projetos" se encontra o meu primeiro projeto, você pode obter o código fonte <a href="https://github.com/devanarodrigues/DC"> aqui. </a>-->
 
@@ -33,4 +33,4 @@ Nesse projeto eu coloquei em prática muitos conteúdos vistos em cursos, e tamb
 ![](images/screenshot2.png)<br>
 
 #### ⚡ estou aberta a opiniões construtivas, dicas e ideias.
-## - Obrigada por ler até aqui! 💖
+## - Obrigada por ler até aqui! 💗
