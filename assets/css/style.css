@@ -8,6 +8,7 @@
 body {
     background-color: #000000;
     color: rgb(212, 212, 212);
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -21,6 +22,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background-color: rgb(196, 196, 196);
 }
+
 
 #container {
     display: flex;
