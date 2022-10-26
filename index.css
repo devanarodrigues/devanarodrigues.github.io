@@ -259,6 +259,7 @@ main h1 {
     margin: 10px auto;
     height: 180px;
     padding: 20px;
+    padding-bottom: 20px;
     border-radius: 15px;
     /*animation:  troca-cor-card1 10s infinite ease-in-out;*/
 
