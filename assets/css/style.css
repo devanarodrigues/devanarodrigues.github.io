@@ -1146,8 +1146,13 @@ main h1 {
     }
 }
 
-@media (min-width: 1441px){
+@media (min-width: 1441px) {
+
+    .card-exp,
+    .card-hab {
+        padding-bottom: 50px;
+    }
     .card-exp{
-        padding: 20px;
+        padding-bottom: 60px;
     }
 }
