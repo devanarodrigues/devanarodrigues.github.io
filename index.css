@@ -487,15 +487,7 @@ main h1 {
 
 /*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
 
-.rodape {
-    height: 50px;
-    background-color: #1C1C1C;
-    text-align: center;
-}
 
-.rodape>p {
-    margin-bottom: 10px;
-}
 
 /*--========================== IMAGENS =========================--*/
 .woman-rosa-512 {
@@ -665,6 +657,21 @@ main h1 {
     }
 }
 
+@keyframes github {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 0, 140, 0.9);
+    }
+
+    50% {
+        text-shadow: 0 0 10px rgba(0, 17, 255, 0.9);
+    }
+
+    100% {
+        text-shadow: 0 0 10px rgba(255, 0, 140, 0.9);
+    }
+}
+
+
 /*--========================== ANIMAÇÕES =========================--*/
 
 .animacao {
@@ -676,6 +683,10 @@ main h1 {
 /*--========================== RODAPE ==========================--*/
 
 .rodape {
+    height: auto;
+    background-color: #1C1C1C;
+    text-align: center;
+
     display: flex;
     justify-content: center;
     position: relative;
@@ -697,6 +708,20 @@ main h1 {
 .rodape p {
     position: absolute;
     bottom: 1px;
+    margin-bottom: 10px;
+}
+
+.github {
+    margin: 5px 0 35px 0;
+    animation: github 3s infinite ease-in-out;
+}
+
+:root {
+    --fa-primary-color: rgb(184, 184, 184);
+}
+
+.fa-github {
+    color: var(--fa-primary-color)
 }
 
 /*--========================== RESPONSIVIDADE ==========================--*/
@@ -1133,4 +1158,3 @@ main h1 {
         font-size: 0.8em;
     }
 }
-
