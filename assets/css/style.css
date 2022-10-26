@@ -1145,3 +1145,9 @@ main h1 {
         font-size: 0.8em;
     }
 }
+
+@media (min-width: 1441px){
+    .card-exp{
+        padding: 20px;
+    }
+}
