@@ -56,7 +56,7 @@ nav {
 }
 
 #logo {
-    background-image: url(/logo.png);
+    background-image: url(/assets/images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: rgb(0, 0, 0);
@@ -208,7 +208,7 @@ main h1 {
 .icon1 {
     width: 64px;
     height: 64px;
-    background-image: url(/images/icons/html-5.png);
+    background-image: url(/assets/images/icons/html-5.png);
     animation: icon1 3s infinite ease;
     margin: auto 20px;
 }
@@ -216,7 +216,7 @@ main h1 {
 .icon2 {
     width: 64px;
     height: 64px;
-    background-image: url(/images/icons/css-3.png);
+    background-image: url(/assets/images/icons/css-3.png);
     animation: icon2 3s infinite ease;
     margin: auto 20px;
 }
@@ -224,7 +224,7 @@ main h1 {
 .icon3 {
     width: 64px;
     height: 64px;
-    background-image: url(/images/icons/js.png);
+    background-image: url(/assets/images/icons/js.png);
     animation: icon3 3s infinite ease;
     margin: auto 20px;
 }
@@ -329,7 +329,7 @@ main h1 {
 /*--- PROJETOS --*/
 
 .projeto1 {
-    background-image: url(images/print-dc.png);
+    background-image: url(/assets/images/print-dc.png);
     background-size: contain;
     background-position-x: center;
     background-position-y: center;
@@ -491,21 +491,21 @@ main h1 {
 
 /*--========================== IMAGENS =========================--*/
 .woman-rosa-512 {
-    background-image: url(images/001-mulher-rosa-512.png);
+    background-image: url(/assets/images/001-mulher-rosa-512.png);
     background-repeat: no-repeat;
     transition: 1s;
 
 }
 
 .woman-azul-512 {
-    background-image: url(images/002-mulher-azul-512.png);
+    background-image: url(/assets/images/002-mulher-azul-512.png);
     background-repeat: no-repeat;
 
     transition: 1s;
 }
 
 .woman-azul-512:hover {
-    background-image: url(images/001-mulher-rosa-512.png);
+    background-image: url(/assets/images/001-mulher-rosa-512.png);
     transition: 1s;
     transform: rotateX(-20deg)
 }
@@ -515,34 +515,21 @@ main h1 {
 
 @keyframes troca-imagem {
     0% {
-        background-image: url(images/001-mulher-rosa-512.png);
+        background-image: url(/assets/images/001-mulher-rosa-512.png);
         transform: translateY(10px);
     }
 
     50% {
-        background-image: url(images/002-mulher-azul-512.png);
+        background-image: url(/assets/images/002-mulher-azul-512.png);
         transform: translateY(-10px);
     }
 
     100% {
-        background-image: url(images/001-mulher-rosa-512.png);
+        background-image: url(/assets/images/001-mulher-rosa-512.png);
         transform: translateY(10px);
     }
 }
 
-@keyframes troca-imagem-rodape {
-    0% {
-        background-image: url(images/icons/001-mulher-rosa-icon-32.png);
-    }
-
-    50% {
-        background-image: url(images/icons/002-mulher-azul-icon-32.png);
-    }
-
-    100% {
-        background-image: url(images/icons/001-mulher-rosa-icon-32.png);
-    }
-}
 
 @keyframes troca-cor-container {
     0% {
@@ -675,7 +662,7 @@ main h1 {
 /*--========================== ANIMAÇÕES =========================--*/
 
 .animacao {
-    background-image: url(images/002-mulher-azul-512.png);
+    background-image: url(/assets/images/002-mulher-azul-512.png);
     background-size: contain;
     animation: troca-imagem 3s infinite ease-in-out;
 }
