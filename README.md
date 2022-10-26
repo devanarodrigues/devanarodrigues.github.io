@@ -18,14 +18,14 @@ Eu sou a Ana ✨​, desenvolvedora Front-End. Atualmente estou terminando o ens
 
 ## 💡 Aprendizados
 
-Nesse projeto eu coloquei em prática muitos conteúdos vistos em cursos, e também fui atrás de muitas outras funcionalidades que eu ainda não conhecia. Aperfeiçoei meu conhecimento em diversos componentes e aprendi a sanar minhas dúvidas sozinha. 👸
+Nesse projeto eu coloquei em prática muitos conteúdos vistos em cursos, e também fui atrás de muitas outras funcionalidades que ainda não conhecia. Aperfeiçoei meu conhecimento em diversos componentes e aprendi a sanar minhas dúvidas sozinha. 👸
 
 ## 💢 Demonstração
 #### - Topo da página
 ![](images/screenshot1.png)<br>
 #### - Animação principal
 ![](images/teste2.gif)<br>
-#### - Habilidades e experiência
+#### - Experiência e habilidades
 ![](images/icons1.gif)<br>
 #### - Projetos
 ![](images/projetos1.gif)<br>
