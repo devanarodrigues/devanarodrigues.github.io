@@ -22,15 +22,15 @@ Nesse projeto eu coloquei em prática muitos conteúdos vistos em cursos, e tamb
 
 ## 💢 Demonstração
 #### - Topo da página
-![](images/screenshot1.png)<br>
+![](assets/images/gif/menu.gif)<br>
 #### - Animação principal
-![](images/teste2.gif)<br>
-#### - Experiência e habilidades
-![](images/icons1.gif)<br>
+![](assets/images/gif/main-animation.gif)<br>
+#### - Sobre mim, experiência e habilidades
+![](assets/images/gif/reveal.gif)<br>
 #### - Projetos
-![](images/projetos1.gif)<br>
+![](assets/images/gif/projetos.gif)<br>
 #### - Rodapé
-![](images/screenshot2.png)<br>
+![](assets/images/gif/rodape.gif)<br>
 
 #### ⚡ estou aberta a opiniões construtivas, dicas e ideias.
 ## - Obrigada por ler até aqui! 💗
