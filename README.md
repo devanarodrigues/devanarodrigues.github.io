@@ -31,6 +31,8 @@ Nesse projeto eu coloquei em prática muitos conteúdos vistos em cursos, e tamb
 ![](assets/images/gif/projetos.gif)<br>
 #### - Rodapé
 ![](assets/images/gif/rodape.gif)<br>
+#### - Responsividade (320x590)
+![](assets/images/gif/responsividade.gif)<br>
 
 #### ⚡ estou aberta a opiniões construtivas, dicas e ideias.
 ## - Obrigada por ler até aqui! 💗
