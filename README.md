@@ -4,7 +4,7 @@
 Esse foi o meu segundo projeto, criado para demonstrar minhas habilidades como Dev Front-End, além de expor outros projetos desenvolvidos para evidênciar meus conhecimentos. 👩‍💻🧠<br>
 
 ### 📌  Você pode acessar o projeto clicando <a href= "https://anarodrigues.vercel.app/"> AQUI </a><br> 
-#### - ou dar uma olhadinha nos gifs e screenshots do projeto, ao final do readme. <3
+#### - ou dar uma olhadinha nos gifs do projeto, ao final do readme. <3
 
 ## ​👩‍💻​ Desenvolvimento
 
@@ -31,6 +31,8 @@ Nesse projeto eu coloquei em prática muitos conteúdos vistos em cursos, e tamb
 ![](assets/images/gif/projetos.gif)<br>
 #### - Rodapé
 ![](assets/images/gif/rodape.gif)<br>
+#### - Responsividade (320x590)
+![](assets/images/gif/responsividade.gif)<br>
 
 #### ⚡ estou aberta a opiniões construtivas, dicas e ideias.
 ## - Obrigada por ler até aqui! 💗
