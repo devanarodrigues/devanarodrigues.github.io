@@ -168,12 +168,12 @@ main:last-child {
 .teste {
     width: 450px;
     height: 450px;
-    margin: 50px auto;
+    margin: 0 auto;
     padding: 0;
 }
 
 #container a {
-    margin: auto;
+    margin: 0;
 }
 
 /*--- MAIN --*/
@@ -230,58 +230,64 @@ main h1 {
     animation: icon3 3s infinite ease;
     margin: auto 20px;
 }
+.secao1>h3 {
+    /* width: 100%;
+    height: 70px; */
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    grid-area: h3;
+}
 
-.secao1 {
-    width: 1200px;
+#secao1 {
+    width: 100%;
     min-height: 680px;
     background-color: #1C1C1C;
     padding-bottom: 90px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
+
+    display: grid;
+    grid-template-areas: 
+    "h3 h3 h3"
+    "exp . ."
+    ". . hab"
+    "skills . .";
+    grid-template-columns: 1fr .3fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr 1fr;
+    grid-row-gap: 1em;
 }
 
-.secao1>h3 {
-    width: 100%;
-    height: 70px;
-    font-size: 2em;
-    text-align: center;
-    margin: 40px 0;
-}
 
 .projeto a {
     text-decoration: none;
 }
 
 /*--- CARDS --*/
+.card-exp,.card-hab,.card-skills{
+    margin: auto 30px;
+    border-radius: .5rem;
+    padding: 1rem;
+    height: 100%;
+}
 .card-exp {
-    background-color: rgba(0, 17, 255, 0.24);
-    width: 700px;
-    margin: 10px auto;
-    height: 180px;
-    padding: 20px;
-    padding-bottom: 20px;
-    border-radius: 15px;
-    /*animation:  troca-cor-card1 10s infinite ease-in-out;*/
-
+    grid-area: exp;
+    background-color: var(--azul-opc);
 }
 
 .card-hab {
-    width: 700px;
-    height: 250px;
-    margin: 10px auto;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: rgba(255, 0, 140, 0.24);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*   animation:  troca-cor-card2 10s infinite ease-in-out;*/
+    background-color: var(--rosa-opc);
+    grid-area: hab;
+    
+}
+.card-skills {
+    background-color: var(--azul-opc);
+    grid-area: skills; 
 }
 
-.card-hab h4 {
+ .card-hab h4 {
     font-size: 1.5em;
     text-align: center;
 }
@@ -300,7 +306,7 @@ main h1 {
     text-align: center;
     margin-top: 10px;
     font-size: 1.3em;
-}
+} 
 
 /*--- SEÇÃO 2 --*/
 .content {
@@ -745,7 +751,7 @@ main h1 {
 
     .card-exp,
     .card-hab {
-        width: 700px;
+        /* width: 700px; */
     }
 
     .botao {

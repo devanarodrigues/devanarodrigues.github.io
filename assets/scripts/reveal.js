@@ -2,22 +2,22 @@ const sr = ScrollReveal({ reset: true })
 
 sr.reveal(".right", {
     origin: "right", 
-    distance: "300px", 
+    distance: "500px", 
     duration: 1500, 
     delay: 50, 
-    reset: false 
+    reset: true 
 });
 sr.reveal(".left", {
     origin: "left", 
-    distance: "300px", 
+    distance: "500px", 
     duration: 1500, 
     delay: 60, 
-    reset: false 
+    reset: true 
 });
 sr.reveal(".top", {
     origin: "top", 
-    distance: "300px", 
+    distance: "500px", 
     duration: 1500, 
     delay: 100,
-    reset: false 
+    reset: true 
 });
