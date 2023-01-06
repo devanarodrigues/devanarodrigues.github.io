@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
 
 #container {
     display: flex;
-    background-color: #222222;
+    background-color: var(--cinza-escuro);
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
@@ -43,26 +43,31 @@ body::-webkit-scrollbar-thumb {
 /*--================= FORMATAÇÕES BARRA DE NAVEGAÇÃO  =======================--*/
 
 nav {
-    background-color: #1C1C1C;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    border-bottom-left-radius: 10px;
-    margin-bottom: 25px;
-    animation: troca-cor-nav 3s infinite ease-in-out;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    background-color: #0e0e0e;
+        top: 0;
+        width: 100%;
+        height: 11vh;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 25px;
+        animation: troca-cor-nav 3s infinite ease-in-out;
+        position: fixed;
+        z-index: 10;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
 
 }
 
 #logo {
     background-image: url(/assets/images/logo.png);
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: rgb(0, 0, 0);
-    width: 300px;
+    width: 100%;
     height: 100%;
     border-bottom-left-radius: 10px;
 }
@@ -72,31 +77,31 @@ nav {
 }
 
 #menu {
-    float: right;
-    clear: both;
-}
-
-#menu ul {
-    margin: 18px;
-    margin-right: 40px;
+    position: absolute;
+    right: 1rem;
 }
 
 #menu li {
     list-style: none;
     display: inline;
-    font-size: 1.5em;
-    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 .5rem;
 }
 
 #menu a {
     text-decoration: none;
     color: rgb(212, 212, 212);
     padding: 5px 15px;
+    border-radius: .4rem;
+    animation: troca-cor-nav-btn 3s infinite ease-in-out;
+    display: inline-block;
+    transition: transform .5s;
 }
 
 #menu a:hover {
-    background-color: rgba(104, 104, 104, 0.37);
-    border-radius: 3px;
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.041);
 }
 
 /*--======================= FORMATAÇÕES TOPO =======================--*/
@@ -135,7 +140,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: #222222;
+    background-color: var(--cinza-escuro);
     min-height: 100vh;
 }
 
@@ -238,11 +243,19 @@ main h1 {
     margin: 20px 0 10px 0;
     grid-area: h3;
 }
+#secao1::after{
+    content:'';
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.123) ;
+    border-radius: 50%;
+    position: absolute;
+    justify-self: center;
+        animation: troca-cor-nav 3s infinite ease-in-out;
+}
 
 #secao1 {
     width: 100%;
     min-height: 680px;
-    background-color: #1C1C1C;
     padding-bottom: 90px;
     /* display: flex;
     flex-direction: column;
@@ -253,13 +266,15 @@ main h1 {
     grid-template-areas: 
     "h3 h3 h3"
     "exp . ."
-    ". . hab"
+    ". nav hab"
     "skills . .";
     grid-template-columns: 1fr .3fr 1fr;
     grid-template-rows: .1fr 1fr 1fr 1fr;
     grid-row-gap: 1em;
 }
-
+ul .section{
+    grid-area: nav;
+}
 
 .projeto a {
     text-decoration: none;
@@ -316,7 +331,6 @@ main h1 {
 
 .secao2 {
     width: 100%;
-    background-color: #222222;
     min-height: 890px;
     display: flex;
     flex-direction: column;
@@ -333,169 +347,6 @@ main h1 {
     height: 70px;
     font-size: 2em;
 }
-
-/*--- PROJETOS --*/
-
-.projeto1 {
-    background-image: url(/assets/images/print-dc.png);
-    background-size: contain;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    width: 98%;
-    height: 50%;
-    margin: 20px auto;
-    border-radius: 15px;
-    margin-bottom: 10px;
-}
-
-
-.projeto1 p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto auto;
-    width: 90%;
-    margin: 20px;
-    height: 50px;
-    background-color: azure;
-    color: #000;
-    transition: 0.25s;
-    border-radius: 10px;
-    font-size: 1.25em;
-    font-weight: bolder;
-}
-
-
-.projeto1 a {
-    text-decoration: none;
-}
-
-.projeto1 a:hover {
-    background-color: #1C1C1C;
-    color: white;
-}
-
-.acessar {
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-    background-color: aliceblue;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    font-weight: bolder;
-    color: #000;
-    transition: 0.3s;
-}
-
-.acessar:hover {
-    background-color: #222222;
-    color: white;
-}
-
-.detalhes-projeto {
-    background-color: rgba(0, 17, 255, 0.24);
-    width: 50%;
-    margin: auto;
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    max-height: 400px;
-}
-
-.detalhes-projeto p {
-    margin: 20px;
-    text-align: center;
-}
-
-
-.botao {
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.detalhes-projeto h3 {
-    text-align: center;
-}
-
-.botao button {
-    width: 100%;
-    margin: auto;
-    border-radius: 10px;
-    border: 0;
-    background-color: rgba(255, 0, 140, 0.24);
-    color: whitesmoke;
-    transition: 0.5s;
-    margin-bottom: 5px;
-}
-
-.botao button:hover {
-    cursor: pointer;
-    background-color: rgba(0, 17, 255, 0.24);
-    color: whitesmoke;
-}
-
-#show-details {
-    display: none;
-    transition: 2s;
-}
-
-.fixed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*----*/
-.projeto2 {
-    width: 98%;
-    height: 720px;
-    margin: 20px auto;
-    border-radius: 15px;
-}
-
-.projeto2 p {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-    margin: auto;
-    margin-top: 20px;
-    width: 34%;
-    height: 50px;
-    background-color: azure;
-    color: #000;
-    transition: 0.25s;
-    border-radius: 10px;
-    font-size: 1.25em;
-    font-weight: bolder;
-    text-align: center;
-}
-
-.projeto2 p:hover {
-    background-color: #222222;
-    color: white;
-}
-
-.projeto2 a {
-    text-decoration: none;
-}
-
-.projeto2 a:hover {
-    background-color: black;
-    color: white;
-}
-
-.gear {
-    margin: auto 50%;
-}
-
-/*--===================== FORMATAÇÕES LAYOUT PRINCIPAL ===================--*/
-
-
 
 /*--========================== IMAGENS =========================--*/
 .woman-rosa-512 {
@@ -518,7 +369,7 @@ main h1 {
     transform: rotateX(-20deg)
 }
 
-/*--========================== KEYFRAMES =========================--*/
+/*--========================== `FRAMES =========================--*/
 
 
 @keyframes troca-imagem {
@@ -564,6 +415,19 @@ main h1 {
     
         100% {
             border-bottom: 1.5px solid rgba(255, 0, 140, 0.9);
+        }
+}
+@keyframes troca-cor-nav-btn {
+    0% {
+            border: 1px solid rgba(255, 0, 140, 0.9);
+        }
+    
+        50% {
+            border: 1px solid rgba(0, 17, 255, 0.9);
+        }
+    
+        100% {
+            border: 1px solid rgba(255, 0, 140, 0.9);
         }
 }
 
@@ -679,7 +543,7 @@ main h1 {
 
 .rodape {
     height: auto;
-    background-color: #1C1C1C;
+    background-color: var(--cinza-escuro);
     text-align: center;
 
     display: flex;
