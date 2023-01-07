@@ -35,5 +35,5 @@ Nesse projeto eu coloquei em prática muitos conteúdos vistos em cursos, e tamb
 ![](assets/images/gif/responsividade.gif)<br>
 
 ##### Você pode conferir meus outros projetos clicando <a href= "https://anaprojetos.vercel.app/"> AQUI</a>.
-#### ⚡ estou aberta a opiniões construtivas, dicas e ideias.
+#### ⚡ Estou aberta a opiniões construtivas, dicas e ideias.
 ## - Obrigada por ler até aqui! 💗
